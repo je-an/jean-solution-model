@@ -29,11 +29,11 @@ define([
             this.amount = TypeCheck.isNumber(options.amount) ? options.amount : Failure.throwTypeError("options.amount is not a number");
             this.latitude = TypeCheck.isNumber(options.latitude) ? options.latitude : Failure.throwTypeError("options.latitude is not a number");
             this.longitude = TypeCheck.isNumber(options.longitude) ? options.longitude : Failure.throwTypeError("options.longitude is not a number");
-            this.updateTime = TypeCheck.isNumber(options.updateTime) ? options.updateTime :Failure.throwTypeError("options.updateTime is not a number");
-            this.movementTop = TypeCheck.isNumber(options.movementTop) ? options.movementTop :Failure.throwTypeError("options.movementTop is not a number");
-            this.movementRight = TypeCheck.isNumber(options.movementRight) ? options.movementRight :Failure.throwTypeError("options.movementRight is not a number");
-            this.movementBottom = TypeCheck.isNumber(options.movementBottom) ? options.movementBottom :Failure.throwTypeError("options.movementBottom is not a number");
-            this.movementLeft = TypeCheck.isNumber(options.movementLeft) ? options.movementLeft :Failure.throwTypeError("options.movementLeft is not a number");
+            this.updateTime = TypeCheck.isNumber(options.updateTime) ? options.updateTime : Failure.throwTypeError("options.updateTime is not a number");
+            this.movementTop = TypeCheck.isNumber(options.movementTop) ? options.movementTop : Failure.throwTypeError("options.movementTop is not a number");
+            this.movementRight = TypeCheck.isNumber(options.movementRight) ? options.movementRight : Failure.throwTypeError("options.movementRight is not a number");
+            this.movementBottom = TypeCheck.isNumber(options.movementBottom) ? options.movementBottom : Failure.throwTypeError("options.movementBottom is not a number");
+            this.movementLeft = TypeCheck.isNumber(options.movementLeft) ? options.movementLeft : Failure.throwTypeError("options.movementLeft is not a number");
             this.color = TypeCheck.isString(options.color) ? options.color : Failure.throwTypeError("options.color");
         };
         Inheritance.inheritPrototype(CrowdRiotIncident, Incident);
