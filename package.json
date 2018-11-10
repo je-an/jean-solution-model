@@ -1,6 +1,6 @@
 {
   "name": "jean-solution-model",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Provides model classes ",
   "main": "dist/jean-solution-model.js",
   "scripts": {
