@@ -5,6 +5,7 @@ define(["TypeCheck", "Failure", "Bounding"], function (TypeCheck, Failure, Bound
      * @param {String} options.url - url of the layer
      * @param {String} options.type - type of the layer
      * @param {String} options.preview - preview of the layer
+     * @param {String} options.description - description of the layer
      * @param {String} options.name - name of the layer
      * @param {String} options.layerName - combined map and layer name of the layer
      * @param {Bounding} options.bounding - the boundings of this layer
@@ -14,6 +15,7 @@ define(["TypeCheck", "Failure", "Bounding"], function (TypeCheck, Failure, Bound
         this.url = TypeCheck.isString(options.url) ? options.url : Failure.throwTypeError("options.url is not a string");
         this.type = TypeCheck.isString(options.type) ? options.type : Failure.throwTypeError("options.type is not a string");
         this.preview = TypeCheck.isString(options.preview) ? options.preview : Failure.throwTypeError("options.preview is not a string");
+        this.description = TypeCheck.isString(options.description) ? options.description : Failure.throwTypeError("options.description is not a string");
         this.name = TypeCheck.isString(options.name) ? options.name : Failure.throwTypeError("options.name is not a string");
         this.layerName = TypeCheck.isString(options.layerName) ? options.layerName : Failure.throwTypeError("options.layerName is not a string");
         this.bounding = TypeCheck.isInstanceOf(options.bounding, Bounding) ? options.bounding : Failure.throwTypeError("options.bounding is not an instance of Bounding");
